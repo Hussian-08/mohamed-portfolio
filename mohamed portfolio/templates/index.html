@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1020">
+
+    <meta name="description"
+          content="Mohamed Hussian S. — Electronics and Communication Engineering student interested in AI, embedded systems, and software development.">
+
+    <title>Mohamed Hussian S. | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a class="logo" href="#home" aria-label="Mohamed Hussian home">
+            MH<span>.</span>
+        </a>
+        <button
+    type="button"
+    id="menu-toggle"
+    class="menu-toggle"
+    aria-label="Open navigation"
+    aria-expanded="false">
+    ☰
+</button>
+
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact" class="nav-contact">Let's Talk ↗</a>
+            <button
+    type="button"
+    id="theme-toggle"
+    class="theme-toggle"
+    aria-label="Switch to light mode">
+    ☀️
+</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero section-container" id="home">
+
+            <div class="hero-content">
+
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    Final-year engineering student
+                </div>
+
+                <p class="eyebrow">
+                    AI · EMBEDDED SYSTEMS · SOFTWARE DEVELOPMENT
+                </p>
+
+                <h1>
+                    Engineering ideas into
+                    <span class="gradient-text">real-world solutions.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Hi, I'm Mohamed Hussian, an Electronics and
+                    Communication Engineering student interested in
+                    artificial intelligence, embedded systems, and
+                    software development. I enjoy exploring new
+                    technologies and building practical projects
+                    that connect engineering with everyday problems.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="button button-primary">
+                        Explore my work ↗
+                    </a>
+
+                    <a href="{{ url_for('static', filename='resume.pdf') }}"
+                       class="button button-secondary"
+                       download>
+                        Download résumé ↓
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mohamed-hussian-440685285"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        LinkedIn ↗
+                    </a>
+
+                    <a href="https://github.com/Hussian-08"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Decorative profile card -->
+            <div class="hero-visual">
+                <div class="glow glow-one"></div>
+                <div class="glow glow-two"></div>
+
+                <div class="profile-card">
+                    <div class="card-top">
+                        <span class="card-indicator"></span>
+                        A LITTLE ABOUT ME
+                    </div>
+
+                    <div class="avatar-placeholder">
+                        <img
+        src="{{ url_for('static', filename='images/profile.jpg') }}"
+        alt="Mohamed Hussian S."
+        class="profile-photo">
+</div>
+
+                    <h2>Curious mind.</h2>
+                    <h2 class="gradient-text">Always learning.</h2>
+
+                    <p>
+                        Exploring the intersection of engineering,
+                        artificial intelligence, and software.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>AI / ML</span>
+                        <span>Embedded Systems</span>
+                        <span>Development</span>
+                    </div>
+
+                    <div class="card-decoration">✳</div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- About -->
+        <section class="content-section section-container" id="about">
+
+            <p class="eyebrow">ABOUT ME</p>
+
+            <h2 class="section-title">
+                Learning by building. Growing through challenges.
+            </h2>
+
+            <p class="section-description">
+                I'm pursuing a B.E. in Electronics and Communication
+                Engineering at Sethu Institute of Technology.
+                My interests span AI, wireless communications,
+                embedded systems, and programming.
+
+                <br><br>
+
+                I enjoy taking an idea from concept to implementation,
+                understanding the technical challenges along the way,
+                and improving my skills through hands-on projects.
+                I'm looking forward to opportunities where I can
+                contribute, collaborate, and keep learning.
+            </p>
+
+        </section>
+
+        <!-- Projects -->
+        <section class="content-section section-container" id="projects">
+
+            <div class="section-heading-row">
+                <div>
+                    <p class="eyebrow">SELECTED WORK</p>
+                    <h2 class="section-title">
+                        Projects and ideas.
+                    </h2>
+                </div>
+
+                <span class="section-number">01 — PROJECTS</span>
+            </div>
+
+            <div class="project-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card project-purple">
+
+                    <div class="project-visual">
+                        <span class="project-icon">◈</span>
+                        <span class="project-index">01</span>
+                    </div>
+
+                    <p class="project-category">
+                        AI · WIRELESS COMMUNICATIONS
+                    </p>
+
+                    <h3>
+                        AI-Based Resource Allocation in 6G Networks
+                    </h3>
+
+                    <p>
+                        Developing a DQN-based resource allocation
+                        approach that adapts subcarrier assignment,
+                        transmit power, and beamforming to channel
+                        conditions and quality-of-service requirements.
+                        The project investigates throughput, fairness,
+                        latency, and energy efficiency.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>DQN</span>
+                        <span>Deep RL</span>
+                        <span>6G</span>
+                    </div>
+
+                    <p class="project-status">
+                        AI / Wireless Networks
+                    </p>
+
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card project-cyan">
+
+                    <div class="project-visual">
+                        <span class="project-icon">⌘</span>
+                        <span class="project-index">02</span>
+                    </div>
+
+                    <p class="project-category">
+                        WEB DEVELOPMENT · GENERATIVE AI
+                    </p>
+
+                    <h3>
+                        The Saffron Kitchen
+                    </h3>
+
+                    <p>
+                        An AI-powered restaurant management and
+                        food-ordering application featuring menu
+                        browsing, cart and checkout, order tracking,
+                        table reservations, reviews, career applications,
+                        and an administration dashboard. Google Gemini
+                        AI supports personalized dish recommendations.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Gemini API</span>
+                    </div>
+
+                    <p class="project-status">
+                        Restaurant Management · AI
+                    </p>
+
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card project-pink">
+
+                    <div class="project-visual">
+                        <span class="project-icon">⌁</span>
+                        <span class="project-index">03</span>
+                    </div>
+
+                    <p class="project-category">
+                        IOT · EMBEDDED SYSTEMS
+                    </p>
+
+                    <h3>
+                        Smart Helmet — IoT Safety System
+                    </h3>
+
+                    <p>
+                        An IoT-based rider-safety system using a
+                        NodeMCU ESP8266, alcohol and vibration sensors,
+                        GPS, and GSM communication. The system
+                        incorporates alcohol detection, accident
+                        detection, location tracking, and SMS emergency
+                        alerts.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>ESP8266</span>
+                        <span>GPS</span>
+                        <span>GSM</span>
+                        <span>Sensors</span>
+                    </div>
+
+                    <p class="project-status">
+                        Embedded Systems · IoT
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Skills -->
+        <section class="content-section section-container" id="skills">
+
+            <p class="eyebrow">TECHNICAL TOOLKIT</p>
+
+            <h2 class="section-title">
+                Technologies I work with.
+            </h2>
+
+            <p class="section-description">
+                A selection of programming languages, engineering
+                fundamentals, and tools from my learning and project work.
+            </p>
+
+            <div class="skills-grid">
+
+                <article class="skill-item">
+                    <span>01</span>
+                    <h3>Programming Languages</h3>
+                    <p>Python, C, Java, Verilog HDL</p>
+                </article>
+
+                <article class="skill-item">
+                    <span>02</span>
+                    <h3>AI and Machine Learning</h3>
+                    <p>Deep Reinforcement Learning, DQN, Google Gemini API</p>
+                </article>
+
+                <article class="skill-item">
+                    <span>03</span>
+                    <h3>Core Engineering</h3>
+                    <p>Digital Electronics, Analog Electronics, Circuit Theory</p>
+                </article>
+
+                <article class="skill-item">
+                    <span>04</span>
+                    <h3>Embedded Systems and IoT</h3>
+                    <p>Arduino IDE, ESP8266, IoT concepts</p>
+                </article>
+
+                <article class="skill-item">
+                    <span>05</span>
+                    <h3>Development Tools</h3>
+                    <p>VS Code, MATLAB, Tinkercad</p>
+                </article>
+
+                <article class="skill-item">
+                    <span>06</span>
+                    <h3>Collaboration</h3>
+                    <p>Problem-solving, teamwork, leadership</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Education -->
+        <section class="content-section section-container" id="education">
+
+            <p class="eyebrow">MY ACADEMIC JOURNEY</p>
+
+            <h2 class="section-title">
+                Education and learning.
+            </h2>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <p class="project-category">2023 — 2027</p>
+
+                    <h3>
+                        B.E. Electronics and Communication Engineering
+                    </h3>
+
+                    <p>
+                        Sethu Institute of Technology, Virudhunagar
+                        — Anna University.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>CGPA: 8.0</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-category">2021 — 2023</p>
+
+                    <h3>Higher Secondary Education</h3>
+
+                    <p>
+                        TNSVN Higher Secondary School, Tiruchuli.
+                        Physics, Chemistry, Mathematics, and Biology.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>74.14%</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Certifications -->
+        <section class="content-section section-container" id="certifications">
+
+            <p class="eyebrow">CONTINUOUS LEARNING</p>
+
+            <h2 class="section-title">
+                Certifications.
+            </h2>
+
+            <div class="skills-grid">
+
+                <article class="skill-item">
+                    <span>01</span>
+                    <h3>Introduction to Industry 4.0 and IIoT</h3>
+                    <p>NPTEL · IIT Kharagpur</p>
+                </article>
+
+                <article class="skill-item">
+                    <span>02</span>
+                    <h3>Python for Data Science</h3>
+                    <p>IBM Cognitive Class</p>
+                </article>
+
+                <article class="skill-item">
+                    <span>03</span>
+                    <h3>Introduction to Internet of Things</h3>
+                    <p>NPTEL · IIT Kharagpur · Elite + Silver</p>
+                </article>
+
+                <article class="skill-item">
+                    <span>04</span>
+                    <h3>Multi-Paradigm Programming with Modern C++</h3>
+                    <p>Infosys Springboard</p>
+                </article>
+
+                <article class="skill-item">
+                    <span>05</span>
+                    <h3>Java Programming</h3>
+                    <p>CodeChef</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Contact -->
+        <section class="contact-section section-container" id="contact">
+
+            <div class="contact-card">
+
+                <p class="eyebrow">LET'S CONNECT</p>
+
+                <h2>
+                    Good ideas start with
+                    <span class="gradient-text">a conversation.</span>
+                </h2>
+
+                <p>
+                    Interested in technology, engineering, or working
+                    together on an idea? Feel free to reach out.
+                    I'm always glad to connect with people who enjoy
+                    learning and building.
+                </p>
+
+                <a href="mailto:mohamed.hussian.mksts@gmail.com"
+                   class="button button-primary">
+                    Send me an email ↗
+                </a>
+
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mohamed-hussian-440685285"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    LinkedIn ↗
+                     </a>
+
+                     <a href="https://github.com/Hussian-08"
+                        target="_blank"
+                      rel="noopener noreferrer">
+                      GitHub ↗
+                     </a>
+
+                    <a href="https://www.instagram.com/hussian_08_/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                     Instagram ↗
+                    </a>
+
+                     <a href="https://www.facebook.com/mohamed.u.s.180/"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                     Facebook ↗
+                    </a>
+
+                     <a href="https://x.com/hussian0808"
+                     target="_blank"
+                      rel="noopener noreferrer">
+                      X ↗
+                     </a>
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section-container">
+
+        <a class="logo" href="#home">MH<span>.</span></a>
+
+        <p>
+            © <span id="year">2026</span> Mohamed Hussian S.
+        </p>
+
+        <a href="#home">Back to top ↑</a>
+
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
